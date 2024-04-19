@@ -1,0 +1,112 @@
+.ticket {
+  width: 300px;
+  height: 370px;
+  border-radius: 5px;
+  padding: 15px 0;
+  font-family: "Roboto", sans-serif;
+  background-color: white;
+  font-size: 14px;
+  line-height: 20px;
+  color: black;
+  margin: 1rem;
+}
+
+.ticket .body .info {
+  font-weight: 300;
+  padding: 15px 5px 10px;
+}
+
+.ticket-wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.ticket-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ticket-header .title {
+  font-size: 16px;
+  line-height: 22px;
+  padding-left: 5px;
+}
+
+.field-header {
+  display: flex;
+  gap: 10px;
+  padding: 15px 5px 10px;
+}
+
+.field-header .info {
+  font-weight: 300;
+}
+
+.magic-wand {
+  cursor: pointer;
+}
+
+.field button {
+  display: inline-block;
+  margin: 0;
+  text-align: center;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.field button.active {
+  margin: 0;
+  padding: 0;
+  border: 3px solid white;
+  background-color: #ffd205;
+  border-radius: 8px;
+}
+
+.field button.winner {
+  margin: 0;
+  padding: 0;
+  border: 3px solid white;
+  background-color: rgb(87, 232, 107);
+  border-radius: 8px;
+  color: black;
+}
+
+.field button.active.winner {
+  background: linear-gradient(
+    109.6deg,
+    rgb(255, 230, 109) 11.2%,
+    rgb(87, 232, 107) 100.2%
+  );
+  color: black;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0;
+  flex-direction: column;
+}
+
+.actions button {
+  border: 1px solid #dddddd;
+  border-radius: 40px;
+  text-align: center;
+  width: auto;
+  background-color: white;
+  padding: 13px 25px;
+  cursor: pointer;
+  font-weight: 300;
+  font-family: inherit;
+  margin: 10px;
+}
+
+.actions .error {
+  text-align: center;
+  color: red;
+  font-weight: 300;
+  font-size: 13px;
+}
